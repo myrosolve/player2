@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+.tlo
+{
+	background: url('img/tlo.jpg') no-repeat center / cover;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+section
+{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main
+{
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	max-width: 450px;
+	height: 600px;
+	border-radius: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7),  0 0 20px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 0, 0, 0.7);
+}
+@font-face {
+	font-family: 'Comic Sans MS';
+	src: url('fonts/ComicSansMS-Bold.woff2') format('woff2'),
+			url('/fonts/ComicSansMS-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+.img
+{
+	padding: 50px 0 30px 0;
+	display: flex;
+	justify-content: center;
+	user-select: none;
+}
+
+.img div
+{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.img div img
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.name {
+	padding: 0 20px 20px 20px;
+	text-align: center;
+	user-select: none;
+}
+
+.name h1 {
+	font-family: 'Comic Sans MS';
+	color: #fce516;
+	font-size: 30px;
+	font-weight: 700;;
+}
+
+.name p {
+	font-family: 'Comic Sans MS';
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.slider {
+	font-family: 'Comic Sans MS';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+}
+.slider p {
+	font-family: 'Comic Sans MS';
+	color: #fff;
+	font-size: 15px;
+	padding: 0 10px;
+}
+
+input[type="range"] {
+	appearance: none;
+	background: #5583ee;
+	height: 5px;
+}
+.input-slider {
+	width: 60%;
+}
+
+.volume {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0 0 0;
+}
+.volume i {
+	padding: 0 10px;
+	color: #fff;
+	font-size: 15px;
+}
+.input-volume {
+	width: 30%;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0 0 0 ;
+}
+.buttons i {
+	cursor: pointer;
+	color: #fff;
+	font-size: 30px;
+}
+.buttons .fa-circle-play ,
+.buttons .fa-circle-pause
+{
+	font-size: 60px;
+	margin: 0 50px;
+}
+
+.button-hide {
+	display: none;
+}
